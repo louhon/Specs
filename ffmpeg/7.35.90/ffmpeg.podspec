@@ -19,7 +19,7 @@ Pod::Spec.new do |s|
     ffmpeg.ios.deployment_target = '4.3'
     
     ffmpeg.requires_arc = true
-    ffmpeg.xcconfig = { 'LIBRARY_SEARCH_PATHS' => '"$(PODS_ROOT)/ffmpeg/"' }
+    ffmpeg.xcconfig = {'HEADER_SEARCH_PATHS' => '${PODS_ROOT}/ffmpeg/include', 'LIBRARY_SEARCH_PATHS' => '"$(PODS_ROOT)/ffmpeg/"' }
     ffmpeg.header_mappings_dir = 'include'
     ffmpeg.source_files = 'include/*.h'
     ffmpeg.vendored_libraries = 'libffmpeg.a'
