@@ -15,14 +15,14 @@ Pod::Spec.new do |s|
   s.default_subspec = 'ffmpeg'
 
   s.subspec 'ffmpeg' do |ffmpeg|
-    bdyuv.platform = :ios, '4.3'
-    bdyuv.ios.deployment_target = '4.3'
+    ffmpeg.platform = :ios, '4.3'
+    ffmpeg.ios.deployment_target = '4.3'
     
-    bdyuv.requires_arc = true
-    bdyuv.xcconfig = { 'LIBRARY_SEARCH_PATHS' => '"$(PODS_ROOT)/ffmpeg/"' }
-    bdyuv.source_files = 'include/*.h'
-    bdyuv.vendored_libraries = 'libffmpeg.a'
-    bdyuv.libraries = 'ffmpeg'
+    ffmpeg.requires_arc = true
+    ffmpeg.xcconfig = { 'LIBRARY_SEARCH_PATHS' => '"$(PODS_ROOT)/ffmpeg/"' }
+    ffmpeg.source_files = 'include/*.h'
+    ffmpeg.vendored_libraries = 'libffmpeg.a'
+    ffmpeg.libraries = 'ffmpeg'
   end
 
 end
