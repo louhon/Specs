@@ -10,7 +10,7 @@ Pod::Spec.new do |s|
     LICENSE
   }
   s.author = { 'yyinc' => 'marketing@yy.com' }
-  s.source = { :http => "http://third-repo.yy.com/frameworks/ffmpeg/7.35.90/zip" }
+  s.source = { :http => "http://tekes.baidu-int.com:8181/repository/ios-public/ffmpeg/7.35.90/ffmpeg.zip" }
 
   s.default_subspec = 'bdffmpeg'
 
