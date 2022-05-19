@@ -20,6 +20,7 @@ Pod::Spec.new do |s|
     
     ffmpeg.requires_arc = true
     ffmpeg.xcconfig = { 'LIBRARY_SEARCH_PATHS' => '"$(PODS_ROOT)/ffmpeg/"' }
+    ffmpeg.header_mappings_dir = 'include'
     ffmpeg.source_files = 'include/*.h'
     ffmpeg.vendored_libraries = 'libffmpeg.a'
     ffmpeg.libraries = 'ffmpeg'
