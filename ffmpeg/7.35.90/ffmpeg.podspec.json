@@ -14,7 +14,7 @@
   "vendored_libraries": "libffmpeg.a",
   "homepage": "icode.baidu.com",
   "source": {
-    "http": "http://third-repo.yy.com/frameworks/ffmpeg/7.35.90/zip",
+    "http": "http://tekes.baidu-int.com:8181/repository/ios-public/ffmpeg/7.35.90/ffmpeg.zip",
     "type": "zip"
   },
   "frameworks": null,
