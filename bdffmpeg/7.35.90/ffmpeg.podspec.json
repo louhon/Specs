@@ -1,1 +1,23 @@
 
+{
+  "name": "ffmpeg",
+  "authors": {
+    "": null
+  },
+  "version": "7.35.90",
+  "summary": "播放内核组件",
+  "platforms": {
+    "ios": "4.3"
+  },
+  "public_header_files": [
+  ],
+  "source_files": "include/*.h",
+  "vendored_libraries": "libffmpeg.a",
+  "homepage": "icode.baidu.com",
+  "source": {
+    "http": "http://tekes.baidu-int.com:8181/repository/ios-public/ffmpeg/7.35.90/ffmpeg.zip",
+    "type": "zip"
+  },
+  "frameworks": null,
+  "libraries": null
+}
