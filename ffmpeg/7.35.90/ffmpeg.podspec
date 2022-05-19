@@ -22,7 +22,7 @@ Pod::Spec.new do |s|
     bdyuv.xcconfig = { 'LIBRARY_SEARCH_PATHS' => '"$(PODS_ROOT)/ffmpeg/"' }
     bdyuv.source_files = 'include/*.h'
     bdyuv.vendored_libraries = 'libffmpeg.a'
-    bdyuv.libraries = 'yuv'
+    bdyuv.libraries = 'ffmpeg'
   end
 
 end
