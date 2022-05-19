@@ -14,15 +14,15 @@ Pod::Spec.new do |s|
 
   s.default_subspec = 'ffmpeg-bd'
 
-  s.subspec 'ffmpeg-bd' do |ffmpeg-bd|
-    ffmpeg-bd.platform = :ios, '4.3'
-    ffmpeg-bd.ios.deployment_target = '4.3'
-    ffmpeg-bd.requires_arc = true
-    ffmpeg-bd.xcconfig = {'HEADER_SEARCH_PATHS' => '${PODS_ROOT}/ffmpeg/include', 'LIBRARY_SEARCH_PATHS' => '"$(PODS_ROOT)/ffmpeg/"' }
-    ffmpeg-bd.header_mappings_dir = 'include'
-    ffmpeg-bd.source_files	 = 'include/**/*.h','include/*.h'
-    ffmpeg-bd.vendored_libraries = 'libffmpeg.a'
-    ffmpeg-bd.libraries = 'ffmpeg'
+  s.subspec 'ffmpeg' do |ffmpeg|
+    ffmpeg.platform = :ios, '4.3'
+    ffmpeg.ios.deployment_target = '4.3'
+    ffmpeg.requires_arc = true
+    ffmpeg.xcconfig = {'HEADER_SEARCH_PATHS' => '${PODS_ROOT}/ffmpeg/include', 'LIBRARY_SEARCH_PATHS' => '"$(PODS_ROOT)/ffmpeg/"' }
+    ffmpeg.header_mappings_dir = 'include'
+    ffmpeg.source_files	 = 'include/**/*.h','include/*.h'
+    ffmpeg.vendored_libraries = 'libffmpeg.a'
+    ffmpeg.libraries = 'ffmpeg'
   end
 
 end
